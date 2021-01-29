@@ -1,0 +1,50 @@
+@import '../styles/style';
+
+@mixin headline () {
+  color: $primary_color;
+  font-family: 'Gotham Bold';
+  text-align: center;
+}
+
+@mixin headline_bg () {
+  background-color: rgba(255, 255, 255, .8);
+  padding: 12px;
+}
+
+:host {
+  background-color: #FFFFFF;
+}
+
+#upscale :host {
+
+  //font-family: Gotham;
+
+  .storybook-article-link-text-button {
+    //font-family: Gotham;
+    background-color: $primary_color;
+    color: #FFFFFF;
+    font-weight: 900;
+  }
+
+  .storybook-category-content-background-overlay,
+  .storybook-product-content-background-overlay,
+  .storybook-article-content-background-overlay
+  {
+    @include headline_bg();
+  }
+
+  .storybook-category-content-name,
+  .storybook-product-content-name,
+  //.storybook-product-content-headline,
+  .storybook-article-content-name
+  {
+    @include headline();
+  }
+
+
+
+  .storybook-article-headline {
+    //@include headline();
+  }
+
+}

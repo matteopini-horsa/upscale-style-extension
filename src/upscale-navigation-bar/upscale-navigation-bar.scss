@@ -1,0 +1,14 @@
+@import '../styles/style';
+:host {
+  nav {
+    ul {
+      li {
+        a, a:hover {
+          background: transparent;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+}

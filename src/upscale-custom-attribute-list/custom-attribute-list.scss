@@ -1,0 +1,19 @@
+@import "src/styles/variables";
+@import "src/styles/mixin";
+
+.attribute-details {
+
+  &__banner-headline {
+    @include sisma_text();
+  }
+
+  &__body-list {
+    @include sisma_text();
+  }
+
+  &__body-html {
+    .html-container {
+      @include sisma_text();
+    }
+  }
+}

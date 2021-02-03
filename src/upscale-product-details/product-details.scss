@@ -1,0 +1,9 @@
+@import "src/styles/variables";
+@import "src/styles/mixin";
+:host {
+
+	.title{
+		@include sisma_text();
+	}
+
+}

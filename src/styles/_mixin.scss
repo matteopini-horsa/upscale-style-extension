@@ -4,6 +4,11 @@
   font-weight: bold;
 }
 
+@mixin sisma_text () {
+  color: $primary_color;
+  font-family: $font-family;
+}
+
 @mixin tema ($templateid, $tema) {
   upscale-template[data-templateid=#{$templateid}] {
     .image-component-content-headline,

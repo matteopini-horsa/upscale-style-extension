@@ -1,0 +1,75 @@
+//  All'interno di uno slider con una classe che inizia con asym-layout-
+//  sposta il testo da overlay in testo visualizzato sotto l'immagine
+//  Riorganizza gli elementi interni in griglia
+[class^="asym-layout-"] {
+  :host {
+    .storybook-content {
+      
+      .overlay {
+        background: transparent;
+        max-height: 33%;
+        position: unset;
+
+        .overlay-content {
+          background: transparent !important;
+          display: grid;
+          grid-template-columns: 2fr min-content;
+          padding: 0 12px !important;
+
+          .content-headline {
+            grid-column: 1;
+            grid-row: 1;
+          }
+
+          // .product-name non è sibling di .content-headline
+          // .product-name occupa la prima e la seconda riga
+          .product-name {
+            grid-column: 1;
+            grid-row: 1 / 3;
+
+            //  rimuove testo troncato alla seconda riga
+            -webkit-line-clamp: unset;
+            max-height: unset;
+          }
+          // .product-name è sibling di .content-headline
+          // .product-name occupa la seconda riga
+          .content-headline + .product-name {
+            grid-column: 1;
+            grid-row: 2;
+          }
+
+          .price {
+            grid-column: 2;
+            grid-row: 1;
+          }
+
+          .buy-buttons {
+            grid-column: 2;
+            grid-row: 2;
+          }
+
+          //  Allineamento testo nelle colonne
+          .content-headline, .product-name {
+            text-align: left !important;
+          }
+
+          .price, .buy-buttons {
+            justify-content: flex-end !important;
+          }
+
+          .storybook-category-content-name,
+            //.storybook-product-content-name,
+            //.storybook-product-content-headline,
+          .storybook-article-content-name,
+          .storybook-template-id-content-headline
+          {
+            font-size: 18px;
+            padding-top: 1em;
+          }
+
+        }
+
+      }
+    }
+  }
+}

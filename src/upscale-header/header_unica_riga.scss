@@ -1,0 +1,19 @@
+/**
+    Forza il posizionamento dell'elemento header__bottom
+    in modo da ottenere un header formato da una unica riga
+ */
+:host {
+  background: $primary_color;
+
+  .header {
+    position: relative;
+  }
+
+  .header__bottom {
+    display: inline-block;
+    left: 130px;
+    position: absolute;
+    top: 0;
+  }
+
+}

@@ -1,0 +1,59 @@
+// Affianca il testo all'immagine relativa
+#upscale {
+
+  // Storybook
+  .txt-dx {
+    upscale-storybbok-content {
+      .storybook-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .overlay {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+
+          .overlay-content {
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  // Immagini
+  upscale-image {
+
+    &.txt-dx {
+
+      .overlay-content {
+        background: transparent;
+        color: #FFF;
+        font-weight: bold;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(90%, -50%);
+        width: auto;
+      }
+
+      .image-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .image-component-content-headline,
+      .image-component-content-subheadline,
+      .link-text,
+      .image-component-link-button {
+        color: #FFF;
+        font-weight: bold;
+        text-align: center !important;
+      }
+
+    }
+
+  }
+
+}

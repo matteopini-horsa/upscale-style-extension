@@ -1,0 +1,7 @@
+// Ridimensiona le righe della griglia in modo da poter mettere il testo sotto alle immagini
+.story-books {
+  .asym-layout-1 {
+    //  valore originale altezza riga 135px
+    grid-template-rows: repeat(2, 335px);
+  }
+}

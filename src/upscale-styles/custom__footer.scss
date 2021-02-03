@@ -1,0 +1,69 @@
+.sisma-footer {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  // width: 90%;
+
+  .sisma-footer-info {
+    flex-grow:1;
+  }
+
+  .sisma-footer-socials {
+    flex-grow: 0;
+
+    a {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  a {
+    color: inherit;
+    // font-weight: 900;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .sisma-footer-col{
+    width:25%;
+    font-size: 14px;
+    ul {
+      margin: 0;
+    }
+  }
+
+  #fourth { a {
+    text-decoration: none;
+  }
+    img {
+      filter: brightness(0) invert(1);
+      margin-right: 10px;
+    }
+  }
+
+  #fifth {
+    font-size: 12px;
+    margin: 20px 0 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 899px) {
+  ul {
+    padding: 0;
+  }
+  .col-bleed {
+    margin-bottom: 1em;
+  }
+  #first, #fourth {
+    margin-top: 1em;
+  }
+
+  #fourth {
+    text-align: center;
+  }
+}

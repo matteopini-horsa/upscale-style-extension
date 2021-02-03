@@ -81,54 +81,6 @@ button {
 
 }
 
-//.sisma-footer {
-//  color: #fff;
-//  display: flex;
-//  flex-wrap: wrap;
-//  margin: 0 auto;
-//  width: 90%;
-//
-//  .sisma-footer-info {
-//    flex-grow:1;
-//  }
-//
-//  .sisma-footer-socials {
-//    flex-grow: 0;
-//
-//    a {
-//      filter: brightness(0) invert(1);
-//    }
-//  }
-//
-//  a {
-//    color: inherit;
-//    font-weight: 900;
-//  }
-//
-//  .sisma-footer-col{
-//      width:25%;
-//      font-size: 14px;
-//      ul {
-//        margin: 0;
-//      }
-//  }
-//
-//  #fourth { a {
-//            text-decoration: none;
-//            }
-//           img {
-//            filter: brightness(0) invert(1);
-//            margin-right: 10px;
-//           }
-//  }
-//
-//  #fifth {
-//    font-size: 12px;
-//    margin: 20px 0 0;
-//    text-align: center;
-//    width: 100%;
-//  }
-//}
 
 upscale-storybook + upscale-storybook {
 	.story-books {
@@ -136,4 +88,5 @@ upscale-storybook + upscale-storybook {
 	}
 }
 
+@import 'custom__footer';
 @import 'custom__text-dx';

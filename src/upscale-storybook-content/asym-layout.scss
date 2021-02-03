@@ -1,7 +1,7 @@
 //  All'interno di uno slider con una classe che inizia con asym-layout-
 //  sposta il testo da overlay in testo visualizzato sotto l'immagine
 //  Riorganizza gli elementi interni in griglia
-[class^="asym-layout-"] {
+[class*="asym-layout-"] {
   :host {
     .storybook-content {
       

@@ -50,20 +50,24 @@
     text-align: center;
     width: 100%;
   }
+
+  @media all and (max-width: 899px) {
+    ul {
+      padding: 0;
+    }
+    .col-bleed {
+      margin-bottom: 1em;
+    }
+    #first, #fourth {
+      margin-top: 1em;
+    }
+
+    #first, #second, #third, #fourth {
+      text-align: center;
+    }
+
+  }
+
 }
 
-@media all and (max-width: 899px) {
-  ul {
-    padding: 0;
-  }
-  .col-bleed {
-    margin-bottom: 1em;
-  }
-  #first, #fourth {
-    margin-top: 1em;
-  }
 
-  #fourth {
-    text-align: center;
-  }
-}

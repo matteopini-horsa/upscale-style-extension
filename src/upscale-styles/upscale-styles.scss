@@ -79,6 +79,11 @@ button {
     background-color: $primary_color;
   }
 
+  //  forza il background-size dei prodotti a contain per evitare il taglio delle immagini
+  .storybook-product-content-cell-background .img {
+    background-size: contain !important;
+  }
+
 }
 
 

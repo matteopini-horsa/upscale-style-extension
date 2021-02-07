@@ -26,30 +26,36 @@
 
     &.txt-dx {
 
-      .overlay-content {
-        background: transparent;
-        color: #FFF;
-        font-weight: bold;
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translate(90%, -50%);
-        width: auto;
-      }
+      @media (min-width: 1024px) {
 
-      .image-container {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-      }
+        .overlay-content {
+          background: transparent;
+          position: absolute;
+          right: 0;
+          top: 0;
+          color: white;
+          font-weight: bold;
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
 
-      .image-component-content-headline,
-      .image-component-content-subheadline,
-      .link-text,
-      .image-component-link-button {
-        color: #FFF;
-        font-weight: bold;
-        text-align: center !important;
+        .image-container {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+        }
+
+        .image-component-content-headline,
+        .image-component-content-subheadline,
+        .link-text,
+        .image-component-link-button {
+          color: #FFF;
+          font-weight: bold;
+          text-align: center !important;
+        }
+
       }
 
     }

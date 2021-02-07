@@ -5,23 +5,22 @@
       //  valore originale altezza riga 135px
       grid-template-rows: repeat(2, 335px);
     }
+  }
 
-    @media (max-width: 600px) {
-      .story-books {
-        .asym-layout-6 {
-          //  valore originale altezza riga 169
-          grid-template-rows: repeat(2, 220px);
-        }
+  @media (max-width: 600px) {
+    .story-books {
+      .asym-layout-6 {
+        //  valore originale altezza riga 169
+        grid-template-rows: repeat(2, 220px);
       }
     }
-    @media (min-width: 601px) and (max-width: 900px) {
-      .story-books {
-        .asym-layout-6 {
-          //  valore originale altezza riga 169
-          grid-template-rows: 250px;
-        }
+  }
+  @media (min-width: 601px) and (max-width: 900px) {
+    .story-books {
+      .asym-layout-6 {
+        //  valore originale altezza riga 169
+        grid-template-rows: 250px;
       }
     }
-
   }
 }

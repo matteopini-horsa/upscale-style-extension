@@ -56,6 +56,13 @@
         grid-template: 351px repeat(2, 280px)/repeat(2, 1fr);
       }
 
+      [class*="asym-layout-"] {
+        &.slider, &.slider.reverse {
+          //height: 100%;
+          grid-template-rows: 50vh;
+          //grid-template-columns: 1fr;
+        }
+      }
     }
   }
 }

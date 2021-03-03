@@ -36,6 +36,14 @@ button {
   @include price();
 }
 
+.upscale-desktop {
+  .container-content {
+    max-width: 2000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 #upscale {
 
   .selling-price.browse-sale-price {

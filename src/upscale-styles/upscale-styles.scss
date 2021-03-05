@@ -22,6 +22,11 @@
   /* Legacy iOS */
   font-weight:normal
 }
+
+@each $id, $font-family in $google-fonts {
+  @import url('https://fonts.googleapis.com/css2?family=#{$font-family}&display=swap');
+}
+
 html, body {
   font-family: $font-family;
   height: 100%;
@@ -34,14 +39,6 @@ button {
 
 .selling-price {
   @include price();
-}
-
-.upscale-desktop {
-  .container-content {
-    max-width: 2000px;
-    width: 100%;
-    margin: 0 auto;
-  }
 }
 
 #upscale {
@@ -102,5 +99,9 @@ upscale-storybook + upscale-storybook {
 	}
 }
 
+@import 'custom__cnt_responsive';
+@import 'custom__container';
+@import 'custom__fonts';
 @import 'custom__footer';
 @import 'custom__text-dx';
+@import 'custom__fonts';

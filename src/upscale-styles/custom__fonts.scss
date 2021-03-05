@@ -1,0 +1,37 @@
+@mixin custom-fonts ($id, $font-family) {
+  #upscale {
+
+    //  Componenti in cui la classe viene applicata ai contenitori
+    .font#{$id} {
+
+      upscale-storybook-content {
+        .storybook-content {
+          .storybook-article-headline,
+          .storybook-template-id-content-headline {
+            font-family: $font-family
+          }
+
+        }
+      }
+    }
+
+    //  Componenti in cui la classe viene applicata al componente
+    upscale-image {
+      &.font#{$id} {
+        .image-component-content-headline,
+        .image-component-content-subheadline,
+        .link-text,
+        .image-component-link-button {
+          font-family: 'Stick', sans-serif;
+        }
+      }
+    }
+
+    .cnt_responsive {
+      &.font#{$id} {
+        font-family: 'Stick', sans-serif;
+      }
+    }
+
+  }
+}

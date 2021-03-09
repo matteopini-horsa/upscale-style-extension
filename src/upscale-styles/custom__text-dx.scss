@@ -1,3 +1,136 @@
+//// Affianca il testo all'immagine relativa
+//#upscale {
+//
+//  .img-txt-dx {
+//    upscale-storybook-content {
+//      @media (min-width: 1024px) {
+//
+//        .overlay {
+//          background: transparent;
+//          //position: absolute;
+//          right: 0;
+//          top: 0;
+//          color: white;
+//          font-weight: bold;
+//          width: auto;
+//          display: flex;
+//          flex-direction: column;
+//          justify-content: center;
+//
+//          .overlay-content {
+//            background-color: transparent;
+//            height: auto;
+//          }
+//        }
+//
+//        .storybook-content {
+//          display: flex;
+//          flex-direction: column;
+//          position: relative;
+//        }
+//
+//        .image-component-content-headline,
+//        .image-component-content-subheadline,
+//        .link-text,
+//        .image-component-link-button {
+//          color: #FFF;
+//          font-weight: bold;
+//          text-align: center !important;
+//        }
+//
+//      }
+//
+//      .headline-text,
+//      .sub-headline-text,
+//      .link-text{
+//        white-space: unset;
+//      }
+//    }
+//  }
+//
+//  // Storybook
+//  .txt-dx {
+//
+//    &.slider {
+//      upscale-storybook-content {
+//        .overlay {
+//          position: static;
+//        }
+//      }
+//    }
+//
+//    upscale-storybook-content {
+//      .storybook-content {
+//        display: grid;
+//        grid-template-columns: 1fr 1fr;
+//
+//        .overlay {
+//          align-items: center;
+//          display: flex;
+//          justify-content: center;
+//
+//          .overlay-content {
+//            height: auto;
+//          }
+//
+//          .headline-text,
+//          .sub-headline-text,
+//          .link-text{
+//            white-space: unset;
+//          }
+//        }
+//      }
+//    }
+//  }
+//
+//  // Immagini
+//  upscale-image {
+//
+//    &.txt-dx {
+//
+//      @media (min-width: 1024px) {
+//
+//        .overlay-content {
+//          background: transparent;
+//          //position: absolute;
+//          right: 0;
+//          top: 0;
+//          color: white;
+//          font-weight: bold;
+//          width: auto;
+//          display: flex;
+//          flex-direction: column;
+//          justify-content: center;
+//        }
+//
+//        .image-container {
+//          display: flex;
+//          flex-direction: column;
+//          position: relative;
+//        }
+//
+//        .image-component-content-headline,
+//        .image-component-content-subheadline,
+//        .link-text,
+//        .image-component-link-button {
+//          color: #FFF;
+//          font-weight: bold;
+//          text-align: center !important;
+//        }
+//
+//      }
+//
+//      .headline-text,
+//      .sub-headline-text,
+//      .link-text{
+//        white-space: unset;
+//      }
+//
+//    }
+//
+//  }
+//
+//}
 @mixin img-txt-dx__outer_box () {
   background: transparent;
   right: 0;
@@ -15,11 +148,10 @@
   position: relative;
 }
 
-
+// Affianca il testo all'immagine relativa
 #upscale {
-  //
-  //  Immagini incluse in upscale-storybook-content
-  //
+
+  //  Immagini incluse in storybook
   .img-txt-dx {
     upscale-storybook-content {
       @media (min-width: 1024px) {
@@ -56,9 +188,45 @@
       }
     }
   }
-  //
-  // Immagini all'interno di un upscale-image
-  //
+
+  // Storybook
+  .txt-dx {
+
+    &.slider {
+      upscale-storybook-content {
+        .overlay {
+          position: static;
+        }
+      }
+    }
+
+    upscale-storybook-content {
+      @media (min-width: 1024px) {
+        .storybook-content {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          .overlay {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            .overlay-content {
+              height: auto;
+            }
+
+            .headline-text,
+            .sub-headline-text,
+            .link-text {
+              white-space: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Immagini
   upscale-image {
 
     &.txt-dx {
@@ -93,43 +261,5 @@
     }
 
   }
-  //
-  // Storybook
-  //
-  .txt-dx {
-
-    &.slider {
-      upscale-storybook-content {
-        .overlay {
-          position: static;
-        }
-      }
-    }
-
-    upscale-storybook-content {
-      .storybook-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-        .overlay {
-          align-items: center;
-          display: flex;
-          justify-content: center;
-
-          .overlay-content {
-            height: auto;
-          }
-
-          .headline-text,
-          .sub-headline-text,
-          .link-text{
-            white-space: unset;
-          }
-        }
-      }
-    }
-  }
-
-
 
 }

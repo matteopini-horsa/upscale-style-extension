@@ -7,14 +7,12 @@
 }
 
 @mixin headline_bg () {
-  // background-color: rgba(255, 255, 255, .8);
   padding: 12px;
 }
 
 #upscale :host {
 
   .storybook-article-link-text-button {
-    //font-family: Gotham;
     background-color: $primary_color;
     color: #FFFFFF;
     font-weight: 900;

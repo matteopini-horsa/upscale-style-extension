@@ -4,7 +4,7 @@
 [class*="asym-layout-"] {
   :host {
     .storybook-content {
-      
+
       .overlay {
         background: transparent;
         max-height: 33%;
@@ -32,7 +32,9 @@
             //  rimuove testo troncato alla seconda riga
             -webkit-line-clamp: unset;
             max-height: unset;
+
           }
+
           // .product-name è sibling di .content-headline
           // .product-name occupa la seconda riga
           .content-headline + .product-name {
@@ -42,12 +44,13 @@
 
           .price {
             grid-column: 2;
-            grid-row: 1;
+            grid-row: 2;
           }
 
           .buy-buttons {
+            padding: 7px 0;
             grid-column: 2;
-            grid-row: 2;
+            grid-row: 1;
           }
 
           //  Allineamento testo nelle colonne
@@ -56,15 +59,14 @@
           }
 
           .price, .buy-buttons {
-            justify-content: flex-end !important;
+            justify-content: space-around !important;
           }
 
           .storybook-category-content-name,
             //.storybook-product-content-name,
             //.storybook-product-content-headline,
           .storybook-article-content-name,
-          .storybook-template-id-content-headline
-          {
+          .storybook-template-id-content-headline {
             font-size: 18px;
             padding-top: 1em;
           }
@@ -72,6 +74,34 @@
         }
 
       }
+    }
+  }
+}
+
+.upscale-mobile {
+  [class*="asym-layout-"] {
+    :host {
+
+      .ng-star-inserted + upscale-aspect-ratio-image {
+        max-height: 140px;
+      }
+
+      .storybook-content {
+        .overlay {
+          max-height: 100%;
+
+          .overlay-content {
+            display: flex;
+            justify-content: space-between;
+
+            .product-name {
+              text-align:center !important;
+            }
+          }
+        }
+      }
+
+
     }
   }
 }

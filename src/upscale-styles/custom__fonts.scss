@@ -2,8 +2,10 @@
   #upscale {
 
     //  Componenti in cui la classe viene applicata ai contenitori
-    .font#{$id} {
+    // ------------------------------------------------------------
+    .font-#{$id} {
 
+      //  Storybook-content
       upscale-storybook-content {
         .storybook-content {
           .storybook-article-headline,
@@ -16,22 +18,37 @@
     }
 
     //  Componenti in cui la classe viene applicata al componente
+    // -----------------------------------------------------------
+
+    //  Image
     upscale-image {
-      &.font#{$id} {
+      &.font-#{$id} {
         .image-component-content-headline,
         .image-component-content-subheadline,
         .link-text,
         .image-component-link-button {
-          font-family: 'Stick', sans-serif;
+          font-family: $font-family, sans-serif;
         }
       }
     }
 
-    .cnt_responsive {
-      &.font#{$id} {
-        font-family: 'Stick', sans-serif;
+
+    //  Content slot
+    upscale-content-slot {
+      &.font-#{$id} {
+        .content-slot-component-headline,
+        .content-slot-component-subheadline,
+        .content {
+          font-family: $font-family, sans-serif;
+        }
       }
     }
+    //}
 
   }
+}
+
+//  Genera le classi per ogni font della mappa
+@each $id, $font-family in $google-fonts {
+  @include custom-fonts($id, $font-family);
 }

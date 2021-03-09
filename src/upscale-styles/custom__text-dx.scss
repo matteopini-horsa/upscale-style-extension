@@ -194,6 +194,20 @@
 
     &.slider {
       upscale-storybook-content {
+
+        .storybook-content {
+
+          upscale-aspect-ratio-image {
+            grid-row: 1;
+            grid-column: 1;
+          }
+
+          .overlay {
+            grid-row: 1;
+            grid-column: 2;
+          }
+        }
+
         .overlay {
           position: static;
         }

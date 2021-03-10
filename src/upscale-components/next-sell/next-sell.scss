@@ -2,7 +2,10 @@
 @import "../../styles/mixin";
 
 .upscale-large,
-.upscale-extra-large {
+.upscale-extra-large,
+.upscale-medium,
+.upscale-extra-small,
+.upscale-small {
 	:host {
 		.container-content {
 			@include sisma_text();

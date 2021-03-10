@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../../styles/mixin";
+
+.upscale-large,
+.upscale-extra-large {
+	:host {
+		.container-content {
+			@include sisma_text();
+		}
+	}
+}

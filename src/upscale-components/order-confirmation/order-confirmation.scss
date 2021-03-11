@@ -1,0 +1,77 @@
+@import '../../styles/style';
+
+@media (max-width: 899px) {
+	.banner {
+		&__headline {
+			@include sisma_text();
+		}
+		&__sub-headline {
+			@include sisma_text();
+		}
+	}
+	.overview {
+		@include sisma_text();
+	}
+	.details-section {
+		.order-details__banner {
+			@include sisma_text();
+			}
+		.details-body {
+			@include sisma_text();
+		}
+		.shopping-button {
+            background-color: $primary-color;
+		}
+	}
+}
+
+@media (min-width: 900px) {
+	.banner {
+		&__headline {
+			@include sisma_text();
+		}
+		&__sub-headline {
+			@include sisma_text();
+		}
+	}
+	.overview {
+		@include sisma_text();
+	}
+	.details-section {
+		.order-details__banner {
+            @include sisma_text();
+		}
+		.details-body {
+			@include sisma_text();
+		}
+		.shopping-button {
+            background-color: $primary-color;
+		}
+	}
+}
+
+.overview {
+	@include sisma_text();
+
+}
+
+
+.details-section {
+    @include sisma_text();
+	.order-details {
+		@include sisma_text();
+		.details-body {
+            @include sisma_text();
+		}
+		.product-summary {
+            @include sisma_text();
+        }
+	}
+	.shopping-button {
+        background-color: $primary-color;
+        &:hover{
+            background-color: $primary-color;
+        }
+	}
+}
+

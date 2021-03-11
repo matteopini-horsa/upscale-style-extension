@@ -1,13 +1,8 @@
 @import '../../styles/style';
 
 .checkout-sections {
-	&.in-review {
-		.formgroup-input-container {
-			background-color: $primary-color;
-		}
-	}
+
 	.formgroup-input-container {	  
-		background-color: $primary-color;
 		::ng-deep {
 			.formgroup__button {
 				background-color: $primary-color;

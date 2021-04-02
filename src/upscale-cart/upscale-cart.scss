@@ -6,13 +6,14 @@
       background-color: $primary-color;
     }
   }
-
-/*
-Horsa ETO-modifica colore
-*/
-.cart-checkout-button {​​​​​​​
-  max-width: calc(100% / 3);
-  background-color: $primary_color;
-  }​​​​​​​
-
+}  
+  
+.upscale-large,
+.upscale-medium {
+	:host {
+	/* Horsa ETO-modifica colore */
+	 .cart-checkout-button {
+	    background-color: $primary-color;
+		}
+	}
 }

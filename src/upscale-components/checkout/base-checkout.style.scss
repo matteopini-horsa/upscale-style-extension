@@ -1,0 +1,34 @@
+@import '../../styles/style';
+
+
+.checkout-sections {​​​​​​​
+    .formgroup-input-container {​​​​​​​
+        ::ng-deep {​​​​​​​
+            .formgroup__button {​​​​​​​
+                height: 50px;
+                font-weight: 500;
+                /*
+                Horsa ETO-modifica colore
+                */
+            background-color: $primary_color;
+            }​​​​​​​
+        }​​​​​​​
+    }​​​​​​​
+}​​​​​​​
+
+
+.section__button {​​​​​​​
+    @include button;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    /*
+    Horsa ETO-modifica colore
+    */
+    background-color: $primary_color;
+
+}​​​​​​​

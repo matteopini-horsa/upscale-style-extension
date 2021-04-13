@@ -1,0 +1,15 @@
+.upscale-small,
+.upscale-extra-small {
+
+  :host.two-col-grid-small {
+    .story-books {
+
+      & > div {
+        background: yellow;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+    }
+  }
+}

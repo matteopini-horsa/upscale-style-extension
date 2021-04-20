@@ -1,0 +1,9 @@
+.upscale-desktop, .upscale-tablet {
+  :host {
+    &.title {
+      .configuration {
+        padding: 0;
+      }
+    }
+  }
+}

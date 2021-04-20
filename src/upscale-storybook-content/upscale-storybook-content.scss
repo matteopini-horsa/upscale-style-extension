@@ -42,5 +42,14 @@
     //@include headline();
   }
 
+  .storybook-content {
+
+    .overlay {
+      &.below {
+        padding-bottom: 12px;
+      }
+    }
+  }
+
 }
 @import 'asym-layout';

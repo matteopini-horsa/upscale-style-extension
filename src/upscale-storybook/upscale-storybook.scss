@@ -5,6 +5,14 @@
 //  Fix layout responsive
 //  in attesa che vengano sistemati da SAP
 :host {
+  .title {
+    .storybook-background {
+        margin-top: 0;     
+        .story-books {
+            margin-top: 0;
+        }       
+    }
+  }
   .story-books {
     @media (max-width: 600px) {
 

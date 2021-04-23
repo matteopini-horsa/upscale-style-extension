@@ -5,9 +5,9 @@
 //  Fix layout responsive
 //  in attesa che vengano sistemati da SAP
 :host {
-  .title {
+  &.title {
     .storybook-background {
-        margin-top: 0;     
+        padding-top: 0;     
         .story-books {
             margin-top: 0;
         }       

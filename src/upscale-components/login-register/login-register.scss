@@ -15,6 +15,11 @@
 
 .register-content {
 	.register-buttons {
+        .login-labels {
+			.login {
+				font-weight: bold;
+			}
+		}
 		.register-button {
 			background-color: $primary-color;
 		}

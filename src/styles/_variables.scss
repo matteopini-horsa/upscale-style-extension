@@ -40,7 +40,14 @@ $tema-samurai: ("foreground": #FFF, "background": #74BD52);
 $tema-cotoneve: ("foreground": #FFF, "background": #9eb1f1);
 
 $slider-indicator-size: 10px;
-
+/**
+  Variabili per la centratura del logo nell'header
+ */
+$header_padding: 7px;
+$nav_loghi_padding: $header-padding;
+/**
+  Variabili per la gestione dei link di navigazioen come immagini
+ */
 $nav_loghi_outer_width: 145px;
 $nav_loghi_width: 75px;
 $nav_loghi_height: 75px;

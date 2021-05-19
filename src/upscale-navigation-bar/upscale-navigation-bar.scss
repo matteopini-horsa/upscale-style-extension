@@ -7,6 +7,11 @@
           background: transparent;
           text-transform: uppercase;
           color: $headerfont_color;
+
+          .item-icon {
+            padding-bottom: $nav_loghi_padding;
+          }
+
         }
       }
     }

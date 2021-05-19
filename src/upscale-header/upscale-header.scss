@@ -7,6 +7,12 @@
 		max-width: 1500px;
 	}
 
+	.header__logo-image {
+		&.desktop {
+			padding-bottom: $header_padding * 2;
+		}
+	}
+
 	.header__hamburger {
 		background-color: transparent;
 		border: 0;

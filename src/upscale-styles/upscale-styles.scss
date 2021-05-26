@@ -1,37 +1,38 @@
-@import '../styles/style';
+@import "../styles/style";
 @font-face {
-  font-family: 'Gotham';
-  src: url('../../fonts/gotham.eot');
+  font-family: "Gotham";
+  src: url("../../fonts/gotham.eot");
   /* IE9 Compat Modes */
-  src: url('../../fonts/gotham.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../../fonts/gotham.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../../fonts/gotham.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../../fonts/gotham.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../../fonts/gotham.svg#svgFontName') format('svg');
+  src: url("../../fonts/gotham.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../../fonts/gotham.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../../fonts/gotham.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../../fonts/gotham.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../../fonts/gotham.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
 @font-face {
-  font-family: 'Gotham Bold';
-  src: url('../../fonts/GothamBold.eot');
+  font-family: "Gotham Bold";
+  src: url("../../fonts/GothamBold.eot");
   /* IE9 Compat Modes */
-  src: url('../../fonts/GothamBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../../fonts/GothamBold.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../../fonts/GothamBold.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../../fonts/GothamBold.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../../fonts/GothamBold.svg#svgFontName') format('svg');
+  src: url("../../fonts/GothamBold.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../../fonts/GothamBold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../../fonts/GothamBold.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../../fonts/GothamBold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../../fonts/GothamBold.svg#svgFontName") format("svg");
   /* Legacy iOS */
-  font-weight:normal
+  font-weight: normal;
 }
 
 @each $id, $font-family in $google-fonts {
-  @import url('https://fonts.googleapis.com/css2?family=#{$font-family}&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=#{$font-family}&display=swap");
 }
 
-html, body {
+html,
+body {
   font-family: $font-family;
   height: 100%;
-  background-color: #FFFFFF;
-  color: #51657D;
+  background-color: #ffffff;
+  color: #51657d;
 }
 
 button {
@@ -43,10 +44,9 @@ button {
 }
 
 #upscale {
-
   .selling-price.browse-sale-price {
     @include price();
-    margin: .5em auto;
+    margin: 0.5em auto;
   }
 
   .pdp-sale-price-text {
@@ -61,6 +61,12 @@ button {
     }
   }
 
+  .summary-info {
+    .title {
+      color: #51657d;
+    }
+  }
+
   //@include tema(c2af5937-4368-4e4e-b08a-348718c2706d, $tema-samurai);
   //@include tema(ef7ea763-f407-4540-a85a-1bac4ef7b7b4, $tema-cotoneve);
 
@@ -71,7 +77,8 @@ button {
     margin-top: 24px;
   }
 
-  .storybook-slider-indicator-active, .storybook-slider-indicator-inactive {
+  .storybook-slider-indicator-active,
+  .storybook-slider-indicator-inactive {
     border: 1px solid $primary_color !important;
     width: $slider-indicator-size;
     height: $slider-indicator-size !important;
@@ -90,19 +97,17 @@ button {
   .storybook-product-content-cell-background .img {
     background-size: contain !important;
   }
-
 }
-
 
 upscale-storybook + upscale-storybook {
-	.story-books {
-		margin-top: 1em !important;
-	}
+  .story-books {
+    margin-top: 1em !important;
+  }
 }
 
-@import 'custom__cnt-responsive';
-@import 'custom__container';
-@import 'custom__fonts';
-@import 'custom__footer';
-@import 'custom__mobile';
-@import 'custom__text-dx';
+@import "custom__cnt-responsive";
+@import "custom__container";
+@import "custom__fonts";
+@import "custom__footer";
+@import "custom__mobile";
+@import "custom__text-dx";

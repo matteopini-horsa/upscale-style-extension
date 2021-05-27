@@ -14,3 +14,20 @@
         color: #51657d;
     }
 }
+.upscale-extra-large,
+.upscale-large {
+    :host.cart-list {
+        .list-view {
+            .product {
+                .product-data {
+                    .info {
+                        .name {
+                            @include medium-font-size;
+                            color: #51657d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

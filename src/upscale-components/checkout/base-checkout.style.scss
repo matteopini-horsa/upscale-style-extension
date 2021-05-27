@@ -1,18 +1,30 @@
-@import '../../styles/style';
+@import "../../styles/style";
 
 .checkout-sections {
 	.formgroup-input-container {
+		.shipping-address-list {
+			.action-button {
+				@include base-font-size;
+				color: #51657d;
+
+				&:hover {
+					color: #51657d;
+				}
+			}
+		}
 		::ng-deep {
 			.formgroup__button {
-			background-color: $primary-color;
-				}
+				background-color: $primary-color;
+			}
 		}
 	}
-
 }
 .section__button {
 	background-color: $primary-color;
-		&:hover {
+	&:hover {
 		background-color: $primary-color;
-		}
+	}
+}
+.same-as-shipping {
+	color: #51657d;
 }

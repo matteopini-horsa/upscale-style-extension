@@ -1,0 +1,11 @@
+@import "~styles/helpers/_module";
+
+@mixin transparent-button() {
+    @include button($background-color: transparent, $color: #51657d, $font-weight: 500, $hover-mix-percent: 30%);
+    height: 50px;
+    width: 200px;
+    max-width: 100%;
+    border: 1px solid #51657d;
+    display: block;
+    margin: 0 auto;
+}

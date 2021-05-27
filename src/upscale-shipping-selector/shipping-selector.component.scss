@@ -1,0 +1,13 @@
+@import "~styles/helpers/_module";
+
+.shipping {
+	&__bold {
+		color: #51657d;
+	}
+	input:checked ~ &__radio-button {
+		border: solid 1px #51657d;
+		&::after {
+			background-color: #51657d;
+		}
+	}
+}

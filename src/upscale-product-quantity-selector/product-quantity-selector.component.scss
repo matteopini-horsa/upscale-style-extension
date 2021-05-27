@@ -1,0 +1,12 @@
+@import "~styles/helpers/_module";
+
+:host {
+    .inputs {
+        .number {
+            color: #51657d;
+        }
+        .action-button {
+            color: #51657d;
+        }
+    }
+}

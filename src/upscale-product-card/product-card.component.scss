@@ -1,0 +1,16 @@
+@import "~styles/helpers/_module";
+.product {
+    .prices {
+        .price {
+            color: #51657d;
+        }
+    }
+}
+
+.remove-button {
+    @include clickable;
+    color: #51657d;
+    &:hover {
+        color: #51657d;
+    }
+}

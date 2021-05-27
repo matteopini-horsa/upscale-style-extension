@@ -1,0 +1,9 @@
+@import "~styles/helpers/_module";
+.addCoupon {
+	.addCoupon-button,
+	.removeCoupon-button {
+		.button-label {
+			color: #51657d;
+		}
+	}
+}

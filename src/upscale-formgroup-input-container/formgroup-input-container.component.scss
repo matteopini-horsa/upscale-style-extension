@@ -1,0 +1,11 @@
+@import "~styles/helpers/_module";
+
+:host {
+	.formgroup {
+		&__container {
+			&-header {
+				color: #51657d;
+			}
+		}
+	}
+}

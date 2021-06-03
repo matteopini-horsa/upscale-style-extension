@@ -1,6 +1,13 @@
 @import "~styles/helpers/_module";
 
 :host {
+    .quantity-label {
+        &__text,
+        &__max {
+            color: #51657d;
+        }
+    }
+
     .inputs {
         .number {
             color: #51657d;

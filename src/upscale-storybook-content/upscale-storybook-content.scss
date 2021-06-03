@@ -5,7 +5,8 @@
   font-family: 'Gotham Bold';
   text-align: center;
   padding: 0;
-  flex-grow: 1;
+  //flex-grow: 1;
+  flex-basis:45px;
 }
 
 @mixin headline_bg () {

@@ -1,9 +1,12 @@
 @import "../styles/variables";
 @import "../styles/mixin";
 :host {
-
-	.title{
+	.price {
+		.original-price {
+			color: #51657d;
+		}
+	}
+	.title {
 		@include sisma_text();
 	}
-
 }

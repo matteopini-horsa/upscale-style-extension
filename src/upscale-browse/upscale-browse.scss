@@ -1,15 +1,14 @@
-@import '../styles/style';
+@import "../styles/style";
 
 :host {
-
   color: $primary_color;
 
-  .breadcrumbs, .divider {
+  .breadcrumbs,
+  .divider {
     display: none;
   }
 
   upscale-product-list {
     background: none;
   }
-
 }

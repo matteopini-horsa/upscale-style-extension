@@ -1,14 +1,16 @@
-@import '../styles/style';
+@import "../styles/style";
 :host {
   nav {
     ul {
+      flex-wrap: nowrap;
       li {
-        a, a:hover {
+        a,
+        a:hover {
           background: transparent;
           text-transform: uppercase;
           color: $headerfont_color;
           font-family: Gotham;
-          font-weight: bold;        
+          font-weight: bold;
           .item-icon {
             padding-bottom: $nav_loghi_padding;
           }
@@ -18,18 +20,19 @@
   }
 }
 
-.upscale-desktop{
-:host {
-  nav {
-    ul {
-      li {
-        a, a:hover {       
-          padding-right: 10px;
-          padding-left: 40px;
+.upscale-desktop {
+  :host {
+    nav {
+      ul {
+        li {
+          a,
+          a:hover {
+            padding-right: 10px;
+            padding-left: 40px;
+          }
         }
       }
     }
   }
-}
 }
 //@import 'nav_loghi';

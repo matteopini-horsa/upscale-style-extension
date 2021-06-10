@@ -8,7 +8,7 @@
 		&-info {
 			align-items: center;
 		}
-	}
+	}	
 	input:checked ~ &__radio-button {
 		border: solid 1px #51657d;
 		&::after {

@@ -1,12 +1,16 @@
 @import "~styles/helpers/_module";
-.product {
-    .prices {
-        .price {
-            color: #51657d;
+.card {
+    .product {
+        .product-data {
+            align-items: center;
+        }
+        .prices {
+            .price {
+                color: #51657d;
+            }
         }
     }
 }
-
 .remove-button {
     @include clickable;
     color: #51657d;

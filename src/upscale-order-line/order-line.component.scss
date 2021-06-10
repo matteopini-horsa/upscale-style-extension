@@ -1,0 +1,12 @@
+@import "~styles/helpers/_module";
+
+:host {
+	.order-line {
+		&__product {
+            align-items: center;
+			&-prices {
+				color: #51657d;
+			}
+		}
+	}
+}

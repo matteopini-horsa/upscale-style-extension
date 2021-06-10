@@ -4,6 +4,11 @@
 	&__bold {
 		color: #51657d;
 	}
+	&__product-card {
+		&-info {
+			align-items: center;
+		}
+	}
 	input:checked ~ &__radio-button {
 		border: solid 1px #51657d;
 		&::after {

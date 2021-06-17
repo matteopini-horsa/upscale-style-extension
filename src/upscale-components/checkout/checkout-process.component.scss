@@ -1,9 +1,12 @@
 @import "~styles/helpers/_module";
-.addCoupon {
-	.addCoupon-button,
-	.removeCoupon-button {
-		.button-label {
-			color: #51657d;
+:host {
+	.addCoupon {
+		.addCoupon-button,
+		.removeCoupon-button {
+			border: 1px solid #51657d;
+			.button-label {
+				color: #51657d;
+			}
 		}
 	}
 }

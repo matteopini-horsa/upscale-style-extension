@@ -1,4 +1,4 @@
-@import '../../styles/style';
+@import "../../styles/style";
 
 @media (max-width: 899px) {
 	.banner {
@@ -15,12 +15,12 @@
 	.details-section {
 		.order-details__banner {
 			@include sisma_text();
-			}
+		}
 		.details-body {
 			@include sisma_text();
 		}
 		.shopping-button {
-            background-color: $primary-color;
+			background-color: $primary-color;
 		}
 	}
 }
@@ -39,39 +39,43 @@
 	}
 	.details-section {
 		.order-details__banner {
-            @include sisma_text();
+			@include sisma_text();
 		}
 		.details-body {
 			@include sisma_text();
 		}
 		.shopping-button {
-            background-color: $primary-color;
+			background-color: $primary-color;
 		}
 	}
 }
 
 .overview {
 	@include sisma_text();
-
 }
 
-
 .details-section {
-    @include sisma_text();
+	@include sisma_text();
 	.order-details {
 		@include sisma_text();
 		.details-body {
-            @include sisma_text();
+			@include sisma_text();
 		}
 		.product-summary {
-            @include sisma_text();
-        }
+			@include sisma_text();
+		}
 	}
 	.shopping-button {
-        background-color: $primary-color;
-        &:hover{
-            background-color: $primary-color;
-        }
+		background-color: $primary-color;
+		&:hover {
+			background-color: $primary-color;
+		}
 	}
 }
 
+em {
+	border: solid #005c7b;
+	border-width: 0 2px 2px 0;
+	height: 8px;
+	width: 8px;
+}

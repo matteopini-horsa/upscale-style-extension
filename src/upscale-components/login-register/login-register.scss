@@ -1,27 +1,35 @@
-@import '../../styles/style';
+@import "../../styles/style";
 
 .login {
 	.login-content {
+		.title {
+			color: #51657d;
+		}
 		.buttons {
 			.login-button {
+				border: solid 2px $primary-color;
+				color: $white;
 				background-color: $primary-color;
 				&:hover {
-					background-color:  $primary-color;
-			}
+					background-color: $primary-color;
+				}
 			}
 			.register-button {
 				background-color: $primary-color;
 				&:hover {
-					background-color:  $primary-color;
-			}
+					background-color: $primary-color;
+				}
 			}
 		}
-	}	
+	}
 }
 
 .register-content {
+	.title {
+		color: #51657d;
+	}
 	.register-buttons {
-        .login-labels {
+		.login-labels {
 			color: #51657d;
 			.login {
 				color: #51657d;
@@ -32,14 +40,7 @@
 			background-color: $primary-color;
 			&:hover {
 				background-color: $primary-color;
-		}
+			}
 		}
 	}
 }
-
-
-
-
-
-
-

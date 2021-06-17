@@ -3,6 +3,12 @@
 :host {
 	.formgroup {
 		&__container {
+			&-header-arrow {
+				&::after {
+					border-right: 2px solid #51657d;
+					border-bottom: 2px solid #51657d;
+				}
+			}
 			&-header {
 				color: #51657d;
 			}

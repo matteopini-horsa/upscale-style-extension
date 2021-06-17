@@ -3,6 +3,15 @@
 .checkout-sections {
 	.formgroup-input-container {
 		.shipping-address-list {
+			.selected-ship-address {
+				.wrapper {
+					.actions {
+						.chevron::before {
+							border-color: #51657d;
+						}
+					}
+				}
+			}
 			.action-button {
 				@include base-font-size;
 				color: #51657d;

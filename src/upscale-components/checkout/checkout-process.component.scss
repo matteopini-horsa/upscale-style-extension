@@ -1,5 +1,13 @@
 @import "~styles/helpers/_module";
 :host {
+	.cart {
+		&__total-item {
+			.vat-total {
+				color: #51657d;
+			}
+		}
+	}
+
 	.addCoupon {
 		.addCoupon-button,
 		.removeCoupon-button {

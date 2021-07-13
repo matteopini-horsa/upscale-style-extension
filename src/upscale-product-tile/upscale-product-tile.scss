@@ -1,6 +1,5 @@
-@import '../styles/style';
+@import "../styles/style";
 :host {
-
   a {
     &:visited {
       color: $primary-color;
@@ -10,5 +9,23 @@
   .name {
     color: $primary_color;
   }
+}
 
+.upscale-medium,
+.upscale-extra-large {
+  :host {
+    .name {
+      padding-top: 40px;
+      text-align: center;
+    }
+  }
+}
+
+.upscale-extra-small,
+.upscale-small {
+  :host {
+    .name {
+      text-align: center;
+    }
+  }
 }

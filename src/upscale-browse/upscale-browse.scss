@@ -12,3 +12,14 @@
     background: none;
   }
 }
+
+.upscale-small,
+.upscale-extra-small {
+  :host {
+    .container-content {
+      .search__text {
+        font-weight: bold;
+      }
+    }
+  }
+}

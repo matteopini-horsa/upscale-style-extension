@@ -1,0 +1,12 @@
+@import "~styles/helpers/_module";
+
+.formgroup-input-container {
+    .shipping-address-list {
+        .action-button {
+            color: #51657d;
+            &:hover {
+                background-color: #51657d(0, 0, 0, 0.1);
+            }
+        }
+    }
+}

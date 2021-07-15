@@ -14,5 +14,13 @@
 				font-weight: bold;
 			}
 		}
+		&__button {
+			font-family: Roboto;
+			font-weight: 500;
+			background-color: #005c7b;
+			&:hover {
+				background-color: #005c7b;
+			}
+		}
 	}
 }

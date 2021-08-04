@@ -105,6 +105,17 @@ button {
     }
   }
 
+  &.upscale-small {
+    .storyBookProgressBar {
+      justify-content: space-between;
+    }
+
+    .storybook-slider-indicator-active,
+    .storybook-slider-indicator-inactive {
+      margin: unset;
+    }
+  }
+
   .storybook-slider-indicator-active,
   .storybook-slider-indicator-inactive {
     border: 1px solid $primary_color !important;

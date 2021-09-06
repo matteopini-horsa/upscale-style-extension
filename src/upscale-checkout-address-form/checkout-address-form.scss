@@ -2,6 +2,15 @@
 
 .formgroup-input-container {
     .shipping-address-list {
+        .selected-ship-address {
+            .customer-address-default {
+                color: #51657d;
+                background-color: white;
+                width: 200px;
+                width: 200px;
+                padding: 0px;
+            }
+        }
         .action-button {
             color: #51657d;
             &:hover {

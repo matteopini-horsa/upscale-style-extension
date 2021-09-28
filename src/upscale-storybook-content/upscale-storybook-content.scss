@@ -53,5 +53,15 @@
       }
     }
   }
+
+  .storybook-product-content-cell-background {
+    max-height: 140px;
+
+    ::ng-deep {
+      img {
+        object-fit: contain !important;
+      }
+    }
+  }
 }
 @import "asym-layout";
